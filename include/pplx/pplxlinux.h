@@ -41,7 +41,8 @@
 namespace pplx
 {
 #if defined(__APPLE__)
-    namespace cpprest_synchronization = ::boost;
+    //namespace cpprest_synchronization = ::boost;
+    namespace cpprest_synchronization = ::std;
 #else
     namespace cpprest_synchronization = ::std;
 #endif
